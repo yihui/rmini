@@ -1,0 +1,22 @@
+Package: rmini
+Version: 0.0.1
+Date: 2012-09-12
+Title: A minimal R package as an example of writing R packages
+Author: Yihui Xie
+Maintainer: Yihui Xie <xie@yihui.name>
+Depends:
+    R (>= 2.14.0)
+Imports:
+    tools
+Suggests:
+    roxygen2
+Description: This is a minimal R package which shows you how to write R
+    packages with roxygen, S3 methods and C code, etc.
+License: GPL
+URL: https://github.com/yihui/rmini
+BugReports: https://github.com/yihui/rmini/issues
+Collate:
+    'S3.R'
+    'C.R'
+    'roxygen.R'
+    'data.R'

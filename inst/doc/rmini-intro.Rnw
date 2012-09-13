@@ -1,0 +1,12 @@
+\documentclass{article}
+% \VignetteIndexEntry{An Introduction to the rmini Package}
+\begin{document}
+
+This should be a \LaTeX{} document. You can write R code here too.
+
+<<>>=
+1+1
+2*pi*1.23
+@
+
+\end{document}
