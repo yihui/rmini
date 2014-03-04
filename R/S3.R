@@ -6,8 +6,6 @@
 #' @param x an arbitrary R object
 #' @return The class of \code{x} is printed as a side-effect.
 #' @export
-#' @S3method hello character
-#' @S3method hello default
 #' @examples hello(1)
 #' hello('a')
 #' hello(structure(1, class = 'world'))
@@ -17,14 +15,14 @@ hello = function(x) {
 
 # default method
 
-#' @method hello default
 #' @rdname hello
+#' @export
 hello.default = function(x) {
   cat('hello,', class(x), '\n')
 }
 
-#' @method hello character
 #' @rdname hello
+#' @export
 hello.character = function(x) {
   cat('Hi! I love characters!\n')
 }
