@@ -10,27 +10,25 @@ split_filename(x, ...)
   \item{...}{explanation of \code{...}}
 }
 \value{
-  The value returned by this function.
+The value returned by this function.
 }
 \description{
-  This is a brief description.
+This is a brief description.
 }
 \details{
-  Anything else after the description goes to the Details
-  section.
+Anything else after the description goes to the Details section.
 
-  You can write several paragraphs.
+You can write several paragraphs.
 }
 \examples{
 split_filename("foo.bar")
 }
 \author{
-  Who are you?
+Who are you?
 }
 \references{
-  \url{https://github.com/yihui/rmini}
+\url{https://github.com/yihui/rmini}
 }
 \seealso{
-  \code{\link[tools]{file_ext}},
-  \code{\link[tools]{file_path_sans_ext}}
+\code{\link[tools]{file_ext}}, \code{\link[tools]{file_path_sans_ext}}
 }

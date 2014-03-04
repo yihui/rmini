@@ -14,10 +14,10 @@ hello(x)
   \item{x}{an arbitrary R object}
 }
 \value{
-  The class of \code{x} is printed as a side-effect.
+The class of \code{x} is printed as a side-effect.
 }
 \description{
-  Say hello on difference classes.
+Say hello on difference classes.
 }
 \examples{
 hello(1)

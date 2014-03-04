@@ -8,10 +8,10 @@ rock_fun(n = 20)
   \item{n}{length of letters}
 }
 \value{
-  The last vector of letters.
+The last vector of letters.
 }
 \description{
-  Nothing fancy.
+Nothing fancy.
 }
 \examples{
 library(rmini)

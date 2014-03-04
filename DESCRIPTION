@@ -15,8 +15,3 @@ Description: This is a minimal R package which shows you how to write R
 License: GPL
 URL: https://github.com/yihui/rmini
 BugReports: https://github.com/yihui/rmini/issues
-Collate:
-    'S3.R'
-    'C.R'
-    'roxygen.R'
-    'data.R'

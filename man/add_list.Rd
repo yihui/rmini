@@ -10,12 +10,10 @@
   \item{y}{an arbitrary R object}
 }
 \value{
-  A list with \code{y} being added to \code{x} as its last
-  element.
+A list with \code{y} being added to \code{x} as its last element.
 }
 \description{
-  This is an S3 generic function for \code{+} with the
-  class \code{Foo}.
+This is an S3 generic function for \code{+} with the class \code{Foo}.
 }
 \examples{
 structure(list(1), class = "Foo") + 2
@@ -28,5 +26,5 @@ z + 5 + matrix(1:4, 2)  # you can add arbitrary objects to z
 methods("+")  # check the methods on +
 }
 \author{
-  Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{http://yihui.name}>
 }
