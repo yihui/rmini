@@ -5,7 +5,7 @@
 reverse(x)
 }
 \arguments{
-  \item{x}{a numeric vector}
+\item{x}{a numeric vector}
 }
 \value{
 a numeric vector (reversed \code{x})

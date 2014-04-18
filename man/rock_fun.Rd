@@ -5,7 +5,7 @@
 rock_fun(n = 20)
 }
 \arguments{
-  \item{n}{length of letters}
+\item{n}{length of letters}
 }
 \value{
 The last vector of letters.

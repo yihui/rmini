@@ -5,9 +5,9 @@
 \method{+}{Foo}(x, y)
 }
 \arguments{
-  \item{x}{a list with class \code{Foo}}
+\item{x}{a list with class \code{Foo}}
 
-  \item{y}{an arbitrary R object}
+\item{y}{an arbitrary R object}
 }
 \value{
 A list with \code{y} being added to \code{x} as its last element.

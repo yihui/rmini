@@ -5,9 +5,9 @@
 split_filename(x, ...)
 }
 \arguments{
-  \item{x}{explanation of \code{x}}
+\item{x}{explanation of \code{x}}
 
-  \item{...}{explanation of \code{...}}
+\item{...}{explanation of \code{...}}
 }
 \value{
 The value returned by this function.
