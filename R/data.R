@@ -2,7 +2,7 @@
 ## forget NULL in the end
 
 #' Some random data
-#' 
+#'
 #' A few numbers from \code{rnorm()}.
 #' @docType data
 #' @name hiNorm
