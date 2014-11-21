@@ -1,5 +1,7 @@
 # A minimal R package
 
+[![Build Status](https://travis-ci.org/yihui/rmini.svg)](https://travis-ci.org/yihui/rmini)
+
 Everything about an R package when you want to learn how to develop an R package. Specifically, it has examples for
 
 - DESCRIPTION
