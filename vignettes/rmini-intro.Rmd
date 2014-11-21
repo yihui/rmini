@@ -1,16 +1,16 @@
-\documentclass{article}
+<!--
 % \VignetteEngine{knitr::knitr}
 % \VignetteIndexEntry{An Introduction to the rmini Package}
-\begin{document}
+-->
 
-This should be a \LaTeX{} document. You can write R code here too.
+This is an R Markdown (v1) vignette. You can certainly write a LaTeX vignette if you want. You can insert R code here too.
 
-<<>>=
+```{r}
 1+1
 2*pi*1.23
 x=rnorm(1)
-@
+```
 
-The random number was \Sexpr{x}.
+The random number was `r x`.
 
-\end{document}
+R Markdown v1 may be limited to you, in which case you may also try the [R Markdown v2](http://rmarkdown.rstudio.com) vignette engine -- just change `knitr::knitr` to `knitr::rmarkdown`.
