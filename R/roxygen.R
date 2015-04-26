@@ -1,11 +1,11 @@
 ## this shows you how to write roxygen comments
 
 #' First line is title
-#' 
+#'
 #' This is a brief description.
-#' 
+#'
 #' Anything else after the description goes to the Details section.
-#' 
+#'
 #' You can write several paragraphs.
 #' @param x explanation of \code{x}
 #' @param ... explanation of \code{...}
@@ -24,7 +24,7 @@ split_filename = function(x, ...) {
 ## you do not need to export all objects
 
 #' Scrolling letters
-#' 
+#'
 #' Nothing fancy.
 #' @param n length of letters
 #' @return The last vector of letters.

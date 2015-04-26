@@ -1,7 +1,7 @@
 ## Examples of C code
 
 #' Reverse elements
-#' 
+#'
 #' This function takes a numeric vector and returns a reversed version of this
 #' vector. The internal computation is via C.
 #' @param x a numeric vector
