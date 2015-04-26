@@ -11,8 +11,8 @@ Imports:
 Suggests:
     roxygen2,
     knitr
-Description: This is a minimal R package which shows you how to write R
-    packages with roxygen, S3 methods and C code, etc.
+Description: A minimal R package that shows you how to write R packages with
+    roxygen documentation, S3 methods, vignettes, tests, and C code, etc.
 License: GPL
 URL: https://github.com/yihui/rmini
 BugReports: https://github.com/yihui/rmini/issues
