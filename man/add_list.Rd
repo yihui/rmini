@@ -1,3 +1,4 @@
+% Please edit documentation in R/S3.R
 \name{+.Foo}
 \alias{+.Foo}
 \title{Add a new element to a list}

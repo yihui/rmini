@@ -1,3 +1,4 @@
+% Please edit documentation in R/C.R
 \name{reverse}
 \alias{reverse}
 \title{Reverse elements}

@@ -1,3 +1,4 @@
+% Please edit documentation in R/roxygen.R
 \name{rock_fun}
 \alias{rock_fun}
 \title{Scrolling letters}

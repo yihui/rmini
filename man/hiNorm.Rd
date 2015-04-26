@@ -1,3 +1,4 @@
+% Please edit documentation in R/data.R
 \docType{data}
 \name{hiNorm}
 \alias{hiNorm}

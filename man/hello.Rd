@@ -1,3 +1,4 @@
+% Please edit documentation in R/S3.R
 \name{hello}
 \alias{hello}
 \alias{hello.character}
