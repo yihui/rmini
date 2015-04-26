@@ -16,3 +16,7 @@ script:
   - cd ..; rm -f *.tar.gz; R CMD build $R_PKG
   - R CMD check $R_PKG*.tar.gz --no-manual
   - cd $R_PKG
+
+# deploy to XRAN
+after_success:
+  - "(wget -q -O - http://yihui.name/xran/r-xran | bash)"
