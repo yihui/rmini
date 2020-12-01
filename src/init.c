@@ -30,6 +30,8 @@ void R_init_rmini(DllInfo *info) {
     /* methods available via .Fortran()  */ NULL,
     /* methods available via .External() */ NULL
   );
-  R_useDynamicSymbols(info, FALSE);
+  // cannot use R_useDynamicSymbols while mixing registered/
+  //   unregistered routines (reverse is unregistered)
+  // R_useDynamicSymbols(info, FALSE);
   R_forceSymbols(info, TRUE);
 }
