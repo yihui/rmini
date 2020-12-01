@@ -15,3 +15,15 @@ reverse = function(x) {
   res = .C('reverse', as.numeric(x), n, numeric(n), package = 'rmini')
   res[[3L]]
 }
+
+#' Reverse an integer vector
+#'
+#' This function takes an integer vector and reverses it (in C).
+#' @param x An integer vector
+#' @return An integer vector (reversed \code{x})
+#' @author Michael Chirico
+#' @examples
+reverse_int <- function(x) {
+  # symbol combines .fixes from NAMESPACE with the name registered in src/init.c
+  .Call(rmini_reverse_int_r_symbol, as.integer(x))
+}
