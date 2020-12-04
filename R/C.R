@@ -9,7 +9,7 @@
 #' @author Yihui Xie <\url{http://yihui.name}>
 #' @examples reverse(c(1, 9.3, 8.2, 4.33)); reverse(1:10)
 #' @export
-#' @useDynLib rmini
+#' @useDynLib rmini, .registration = TRUE, .fixes = "rmini_"
 reverse = function(x) {
   n = length(x)
   res = .C('reverse', as.numeric(x), n, numeric(n), package = 'rmini')
@@ -22,7 +22,7 @@ reverse = function(x) {
 #' @param x An integer vector
 #' @return An integer vector (reversed \code{x})
 #' @author Michael Chirico
-#' @examples
+#' @export
 reverse_int <- function(x) {
   # symbol combines .fixes from NAMESPACE with the name registered in src/init.c
   .Call(rmini_reverse_int_r_symbol, as.integer(x))
