@@ -10,6 +10,7 @@ Imports:
     tools
 Suggests:
     roxygen2,
+    markdown,
     knitr
 Description: A minimal R package that shows you how to write R packages with
     roxygen documentation, S3 methods, vignettes, tests, and C code, etc.
