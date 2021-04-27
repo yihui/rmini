@@ -12,7 +12,7 @@
 #' @useDynLib rmini, .registration = TRUE
 reverse = function(x) {
   n = length(x)
-  res = .C('reverse', as.numeric(x), n, numeric(n), package = 'rmini')
+  res = .C('rmini_reverse', as.numeric(x), n, numeric(n), package = 'rmini')
   res[[3L]]
 }
 
@@ -24,5 +24,5 @@ reverse = function(x) {
 #' @author Michael Chirico
 #' @export
 reverse_int = function(x) {
-  .Call('reverse_int', x, PACKAGE = 'rmini')
+  .Call('rmini_reverse_int', x, PACKAGE = 'rmini')
 }

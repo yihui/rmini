@@ -1,7 +1,7 @@
 #include <Rinternals.h>
 #include <R_ext/Rdynload.h>
 
-SEXP reverse_int(SEXP x) {
+SEXP rmini_reverse_int(SEXP x) {
   if (TYPEOF(x) != INTSXP) error("Only for integer input");
   int n = LENGTH(x);
 

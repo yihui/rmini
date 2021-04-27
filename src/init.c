@@ -8,18 +8,18 @@
 */
 
 /* .C calls */
-extern void reverse(void *, void *, void *, void *);
+extern void rmini_reverse(void *, void *, void *, void *);
 
 /* .Call calls */
-extern SEXP reverse_int(SEXP);
+extern SEXP rmini_reverse_int(SEXP);
 
 static const R_CMethodDef CEntries[] = {
-    {"reverse", (DL_FUNC) &reverse, 4},
+    {"rmini_reverse", (DL_FUNC) &rmini_reverse, 4},
     {NULL, NULL, 0}
 };
 
 static const R_CallMethodDef CallEntries[] = {
-    {"reverse_int", (DL_FUNC) &reverse_int, 1},
+    {"rmini_reverse_int", (DL_FUNC) &rmini_reverse_int, 1},
     {NULL, NULL, 0}
 };
 
