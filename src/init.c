@@ -1,37 +1,30 @@
+#include <R.h>
 #include <Rinternals.h>
+#include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
 
-SEXP reverse_int(SEXP x) {
-  if (TYPEOF(x) != INTSXP) error("Only for integer input");
-  int n=LENGTH(x);
+/* FIXME: 
+   Check these declarations against the C/Fortran source code.
+*/
 
-  SEXP out = PROTECT(allocVector(INTSXP, n));
-  int *outp = INTEGER(out), *xp = INTEGER(x);
+/* .C calls */
+extern void reverse(void *, void *, void *, void *);
 
-  for (int i=0; i<n; i++) {
-    outp[i] = xp[n-i-1];
-  }
+/* .Call calls */
+extern SEXP reverse_int(SEXP);
 
-  UNPROTECT(1);
-  return out;
-}
-
-// for more: Registering native routines section of Writing R Extensions
-static const R_CallMethodDef callMethods[] = {
-  {"reverse_int_r_symbol", (DL_FUNC) &reverse_int, 1},
-  {NULL, NULL, 0}
+static const R_CMethodDef CEntries[] = {
+    {"reverse", (DL_FUNC) &reverse, 4},
+    {NULL, NULL, 0}
 };
 
-void R_init_rmini(DllInfo *info) {
-  R_registerRoutines(
-    info,
-    /* methods available via .C()        */ NULL,
-    /* methods available via .Call()     */ callMethods,
-    /* methods available via .Fortran()  */ NULL,
-    /* methods available via .External() */ NULL
-  );
-  // cannot use R_useDynamicSymbols while mixing registered/
-  //   unregistered routines (reverse is unregistered)
-  // R_useDynamicSymbols(info, FALSE);
-  R_forceSymbols(info, TRUE);
+static const R_CallMethodDef CallEntries[] = {
+    {"reverse_int", (DL_FUNC) &reverse_int, 1},
+    {NULL, NULL, 0}
+};
+
+void R_init_rmini(DllInfo *dll)
+{
+    R_registerRoutines(dll, CEntries, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }
