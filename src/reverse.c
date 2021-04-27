@@ -1,4 +1,4 @@
-void reverse(double *a, int *na, double *b)
+void rmini_reverse(double *a, int *na, double *b)
 {
     int i;
     for(i = 0; i < *na; i++)

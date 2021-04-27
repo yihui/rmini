@@ -18,3 +18,4 @@ License: GPL
 URL: https://github.com/yihui/rmini
 BugReports: https://github.com/yihui/rmini/issues
 VignetteBuilder: knitr
+RoxygenNote: 7.1.1
