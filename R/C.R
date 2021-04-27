@@ -24,5 +24,5 @@ reverse = function(x) {
 #' @author Michael Chirico
 #' @export
 reverse_int = function(x) {
-  .Call('reverse_int', as.integer(x), PACKAGE = 'rmini')
+  .Call('reverse_int', x, PACKAGE = 'rmini')
 }
