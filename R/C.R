@@ -23,6 +23,6 @@ reverse = function(x) {
 #' @return An integer vector (reversed \code{x})
 #' @author Michael Chirico
 #' @export
-reverse_int <- function(x) {
+reverse_int = function(x) {
   .Call('reverse_int', as.integer(x), PACKAGE = 'rmini')
 }
